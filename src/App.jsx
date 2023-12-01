@@ -12,15 +12,15 @@ function App() {
     <QueryClientProvider client={queryClient}>
     <BrowserRouter>
       <Routes>
-        <Route element={<MainLayout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/Starred" element={<Starred />} />
-        </Route>
+        
 
         <Route path="/show/:showId" element={<Show />} />
 
         <Route path="*" element={<div>Not Found</div>} />
-
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/Starred" element={<Starred />} />
+        </Route>
         {/* <Route path="/" element={<App />}>
       <Route index element={<Home />} />
       <Route path="teams" element={<Teams />}>

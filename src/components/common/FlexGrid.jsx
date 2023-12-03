@@ -5,7 +5,7 @@ export const FlexGrid = styled.div`
   justify-content: center;
   flex-wrap: wrap;
 
-  animation: fadein 0.3s ease-in forwards;
+  animation: fadein 0.4s ease-in forwards;
 
   @keyframes fadein {
     from {
